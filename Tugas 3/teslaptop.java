@@ -6,8 +6,11 @@ class teslaptop
 //namaClass namaObjek = namaKonstruktor
 	laptop bolank = new laptop();
 
-	bolank.setWarna("hitam");
-	
-	System.out.println("Warna="+ bolank.getWarna());
+	bolank.menyala();
+	System.out.println(" Merk 			= " + bolank.getMerk());
+	System.out.println(" Warna 			= "	+ bolank.getWarna());
+	System.out.println(" Koneksi wifi anda	= " + bolank.getWifi());
+	System.out.println(" Baterai anda tinggal 	= " + bolank.getBaterai()+"%");
+	bolank.mati();
 	}
 }

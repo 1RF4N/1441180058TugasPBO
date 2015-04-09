@@ -61,7 +61,7 @@ class laptop
 	{
 		return baterai;
 	}
-	public String getwifi()
+	public String getWifi()
 	{
 		return wifi;
 	}
@@ -78,7 +78,7 @@ class laptop
 	{
 		baterai = b;
 	}
-	public void setwifi(String f)
+	public void setWifi(String f)
 	{
 		wifi = f;
 	}
