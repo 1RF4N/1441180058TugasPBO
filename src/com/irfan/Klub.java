@@ -49,9 +49,9 @@ public class Klub {
 
     @Override
     public String toString() {
-        return "Klub ->" +
+        return " " +
                 "Nama Klub = '" + namaKlub + '\'' +
-                ", Divisi = " + divisi +
+
                 '}';
     }
 }

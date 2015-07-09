@@ -41,9 +41,9 @@ public class Liga {
 
     @Override
     public String toString() {
-        return "Liga ->" +
+        return " " +
                 "Nama Liga = '" + namaLiga + '\'' +
-                ", Daftar Divisi = " + daftarDivisi +
+
                 '}';
     }
 }

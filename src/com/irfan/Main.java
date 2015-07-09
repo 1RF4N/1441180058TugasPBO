@@ -28,39 +28,43 @@ public class Main {
         serieB.setDaftarKlub(dua1); serieB.setDaftarKlub(dua2);
         serieC.setDaftarKlub(tiga1); serieC.setDaftarKlub(tiga2);
 
-        //Liga N Divisi + Klub
-        System.out.println("Liga : " +premiere.getNamaLiga());
-        System.out.println("Divisi : " +premiere.getDaftarDivisi());
-        System.out.println("\n");
-
-        //Liga N Divisi + Semua Anggota Klub
         System.out.println("Liga : " +premiere.getNamaLiga());
         System.out.println("Klub : " +premiere.getDaftarKlub());
         System.out.println("\n");
 
-        //Liga N Nama Klub + Masing Maisng Divisi
+        //Daftar Divisi
+        System.out.println("1. Get daftar divisi by nama liga");
         System.out.println("Liga : " +premiere.getNamaLiga());
-        System.out.println("Klub : " +serieA.getDaftarKlub());
-        System.out.println("\n");
-        System.out.println("Liga : " +premiere.getNamaLiga());
-        System.out.println("Klub : " +serieB.getDaftarKlub());
-        System.out.println("\n");
-        System.out.println("Liga : " +premiere.getNamaLiga());
-        System.out.println("Klub : " +serieC.getDaftarKlub());
+        System.out.println("Berikut Daftar Divisi Dari Liga : " +premiere.getDaftarDivisi());
         System.out.println("\n");
 
-        //Liga N 1Klub + Nama Divisinya
-        System.out.println("Liga   : " +satu1.getLiga());
-        System.out.println("Klub   : " +satu1.getNamaKlub());
-        System.out.println("Divisi : " +satu1.getDivisi());
+        //Nama Klub + Divisinya
+        System.out.println("2. Get daftar klub by nama liga");
+        System.out.println("Liga : " +premiere.getNamaLiga());
+        System.out.println("Berikut Daftar Klub Dari Liga : " +premiere.getDaftarKlub());
         System.out.println("\n");
-        System.out.println("Liga   : " +dua2.getLiga());
-        System.out.println("Klub   : " +dua2.getNamaKlub());
-        System.out.println("Divisi : " +dua2.getDivisi());
+
+
+        //Nama Klub Dari Anggota Divisi
+        System.out.println("3. Get daftar klub by nama divisi");
+        System.out.println("Daftar Klub Dari Divisi Serie A : "+serieA.getDaftarKlub());
         System.out.println("\n");
-        System.out.println("Liga   : " +tiga1.getLiga());
-        System.out.println("Klub   : " +tiga1.getNamaKlub());
-        System.out.println("Divisi : " +tiga1.getDivisi());
+        System.out.println("Daftar Klub Dari Divisi Serie B : "+serieB.getDaftarKlub());
+        System.out.println("\n");
+        System.out.println("Daftar Klub Dari Divisi Serie C : "+serieC.getDaftarKlub());
+        System.out.println("\n");
+
+        //Nama Klub Tertentu Berada Pada Divisi Tertentu
+        System.out.println("4. Get klub ini berada di divisi mana by nama Klub");
+        System.out.println("Klub        : " +satu1.getNamaKlub());
+        System.out.println("Di Divisi   : " +satu1.getDivisi());
+        System.out.println("\n");
+
+        //Nama Klub Tertentu Berada Pada Liga Premiere
+        System.out.println("5. Get klub ini berada di liga apa by nama klub");
+	    satu1.setLiga(premiere);
+        System.out.println("Di Liga     : " +satu1.getLiga());
+        System.out.println("Klub        : " +satu1.getNamaKlub());
         System.out.println("\n");
     }
 }

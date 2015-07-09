@@ -32,7 +32,7 @@ public class Divisi {
 
     @Override
     public String toString() {
-        return "Nama Divisi = '" + namaDivisi + '\'' +
+        return " '" + namaDivisi + '\'' +
                 '}';
     }
 }
